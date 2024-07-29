@@ -1,7 +1,7 @@
-import SearchBar from "./Components/Fragments/SearchBar";
+import HomePage from "./Components/pages";
 
 function App() {
-  return <SearchBar />;
+  return <HomePage />;
 }
 
 export default App;

@@ -36,7 +36,7 @@ const SearchBar = () => {
           />
           <button
             type="submit"
-            className="search-button bg-purple-500 px-2 py-1 ml-1 text-xs rounded-lg border border-black shadow-lg text-white font-bold"
+            className="search-button bg-purple-500 px-2 py-1 ml-1 text-xs rounded-lg border border-black shadow-lg text-white font-bold hover:bg-purple-300 hover:scale-105 hover:text-black transition"
           >
             Search
           </button>
@@ -47,6 +47,7 @@ const SearchBar = () => {
           return (
             <Card
               key={movie.imdbID}
+              id={movie.imdbID}
               title={movie.Title}
               year={movie.Year}
               type={movie.Type}

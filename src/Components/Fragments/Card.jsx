@@ -1,8 +1,12 @@
-const Card = ({ title, year, type, image }) => {
+import { Link } from "react-router-dom";
+
+const Card = ({ title, year, type, image, id }) => {
   return (
     <div className="bg-slate-900 w-40 p-4 rounded m-2 shadow-md flex flex-col justify-between">
       <div className="div">
-        <img src={image} alt="random" className="w-32" />
+        <Link to={`/detail/${id}`}>
+          <img src={image} alt="random" className="w-32" />
+        </Link>
         <h2 className="text-white my-1 font-semibold">{title}</h2>
       </div>
       <div className="">
